@@ -71,9 +71,9 @@
 
       /* What it does: A work-around for email clients meddling in triggered links. */
       *[x-apple-data-detectors],
-        /* iOS */
-        .unstyle-auto-detected-links *,
-        .aBn {
+    /* iOS */
+    .unstyle-auto-detected-links *,
+    .aBn {
         border-bottom: 0 !important;
         cursor: default !important;
         color: inherit !important;
@@ -141,79 +141,6 @@
       td {
         font-family: "Montserrat", sans-serif;
       }
-
-      .circle {
-        height: 70px;
-        width: 70px;
-        border-radius: 100%;
-        background: #276ef1;
-        line-height: 70px;
-        margin: auto;
-      }
-
-      .circle img {
-        display: inline-block;
-        margin: 15px auto;
-      }
-
-      .service-item {
-        float: left;
-        width: 16.66%;
-        padding: 5px;
-      }
-
-      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
-      @media only screen and (min-device-width: 320px) and (max-device-width: 470px) {
-        .service-item {
-          width: 33.333%;
-          min-height: 140px;
-        }
-      }
-
-      /* section */
-      .section-title {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 1.2;
-        margin: 0 0 20px;
-      }
-
-      .section-text {
-        font-weight: 500;
-        line-height: 1.5;
-        font-size: 16px;
-        margin-bottom: 30px;
-      }
-
-      @media only screen and (min-device-width: 320px) and (max-device-width: 470px) {
-        .section-title {
-          font-size: 25px;
-        }
-      }
-
-      /* button */
-      .button {
-        display: inline-block;
-        border-radius: 8px;
-        width: 180px;
-        background: #276ef1;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 600;
-        padding: 10px 5px;
-        font-size: 14px;
-      }
-
-      /* social */
-      .social {
-        display: inline-block;
-        height: 30px;
-        width: 30px;
-        border-radius: 100%;
-        background: #fff;
-        text-align: center;
-        line-height: 36px;
-      }
     </style>
   </head>
 
@@ -249,7 +176,7 @@
           font-weight: 400;
           font-size: 15px;
           line-height: 1.8;
-          background: #fff;
+          padding: 0;
         "
         class="email-container"
       >
@@ -261,7 +188,7 @@
           cellpadding="0"
           border="0"
           width="100%"
-          style="margin: auto"
+          style="margin: auto; background: #fff"
         >
           <tr>
             <td valign="top" class="bg_white" style="padding: 2em 1em">
@@ -286,7 +213,7 @@
                     <div
                       style="
                         font-weight: 700;
-                        font-size: 45px;
+                        font-size: 35px;
                         color: #222120;
                         line-height: 1;
                         margin-top: 30px;
@@ -324,68 +251,107 @@
             >
               <table width="100%">
                 <tr>
-                  <td width="60%" style="text-align: center">
-                    <h3
-                      class="section-title"
-                      style="font-family: 'Montserrat', sans-serif"
-                    >
-                      Combo bứt phá<br />
-                      doanh thu
-                    </h3>
-                    <div class="section-text">
-                      <p
-                        style="
-                          margin: 0 0 7px;
-                          font-family: 'Montserrat', sans-serif;
-                        "
-                      >
-                        Miễn phí 1 tháng quản trị quảng cáo Facebook, Google,
-                        TikTok.
-                      </p>
-                      <p
-                        style="
-                          margin: 0 0 7px;
-                          font-family: 'Montserrat', sans-serif;
-                        "
-                      >
-                        Miễn phí thiết kế Landing Page cho hợp đồng trị giá trên
-                        50 triệu.
-                      </p>
-                      <p
-                        style="
-                          margin: 0 0 7px;
-                          font-family: 'Montserrat', sans-serif;
-                        "
-                      >
-                        Chiết khấu 5% cho lần đăng ký dịch vụ tiếp theo
-                      </p>
-                    </div>
-                    <a
-                      class="button"
-                      href="#"
-                      style="color: #fff; font-family: 'Montserrat', sans-serif"
-                    >
-                      Nhận quà ngay
-                      <img
-                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/arrow-white.png"
-                        alt=""
-                        style="
-                          display: inline-block;
-                          margin-left: 10px;
-                          height: 10px;
-                          width: 5.87px;
-                        "
-                      />
-                    </a>
+                  <td width="100%">
+                    <table>
+                      <tr>
+                        <td width="100%" style="text-align: center">
+                          <h3
+                            style="
+                              font-weight: 700;
+                              font-size: 25px;
+                              line-height: 1.2;
+                              margin: 0 0 20px;
+                              font-family: 'Montserrat', sans-serif;
+                            "
+                          >
+                            Combo bứt phá<br />
+                            doanh thu
+                          </h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td width="20%"></td>
+                              <td width="60%" style="text-align: center">
+                                <div style="margin-bottom: 30px">
+                                  <p
+                                    style="
+                                      margin: 0 0 7px;
+                                      font-family: 'Montserrat', sans-serif;
+                                      line-height: 1.5;
+                                      font-family: 'Montserrat', sans-serif;
+                                    "
+                                  >
+                                    Miễn phí 1 tháng quản trị quảng cáo
+                                    Facebook, Google, TikTok.
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 0 0 7px;
+                                      font-family: 'Montserrat', sans-serif;
+                                      line-height: 1.5;
+                                      font-family: 'Montserrat', sans-serif;
+                                    "
+                                  >
+                                    Miễn phí thiết kế Landing Page cho hợp đồng
+                                    trị giá trên 50 triệu.
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 0 0 7px;
+                                      font-family: 'Montserrat', sans-serif;
+                                      line-height: 1.5;
+                                      font-family: 'Montserrat', sans-serif;
+                                    "
+                                  >
+                                    Chiết khấu 5% cho lần đăng ký dịch vụ tiếp
+                                    theo
+                                  </p>
+                                </div>
+                                <a
+                                  style="
+                                    display: inline-block;
+                                    border-radius: 8px;
+                                    width: 180px;
+                                    background: #276ef1;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    padding: 10px 5px;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    font-family: 'Montserrat', sans-serif;
+                                  "
+                                  href="#"
+                                >
+                                  Nhận quà ngay
+                                  <img
+                                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/arrow-white.png"
+                                    alt=""
+                                    style="
+                                      display: inline-block;
+                                      margin-left: 10px;
+                                      height: 10px;
+                                      width: 5.87px;
+                                    "
+                                  />
+                                </a>
+                              </td>
+                              <td width="20%"></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
-                  <td width="40%"></td>
                 </tr>
               </table>
             </td>
           </tr>
 
           <tr>
-            <td height="20px"></td>
+            <td style="height: 20px"></td>
           </tr>
 
           <tr>
@@ -400,60 +366,96 @@
             >
               <table width="100%">
                 <tr>
-                  <td width="40%"></td>
-                  <td width="60%" style="text-align: center">
-                    <h3
-                      class="section-title"
-                      style="font-family: 'Montserrat', sans-serif"
-                    >
-                      Combo bứt phá<br />
-                      doanh thu
-                    </h3>
-                    <div class="section-text">
-                      <p
-                        style="
-                          margin: 0 0 7px;
-                          font-family: 'Montserrat', sans-serif;
-                        "
-                      >
-                        Miễn phí 1 tháng quản trị quảng cáo Facebook, Google,
-                        Tik Tok.
-                      </p>
-                      <p
-                        style="
-                          margin: 0 0 7px;
-                          font-family: 'Montserrat', sans-serif;
-                        "
-                      >
-                        Miễn phí thiết kế Landing Page cho hợp đồng trị giá trên
-                        50 triệu.
-                      </p>
-                      <p
-                        style="
-                          margin: 0 0 7px;
-                          font-family: 'Montserrat', sans-serif;
-                        "
-                      >
-                        Chiết khấu 5% cho lần đăng ký dịch vụ tiếp theo
-                      </p>
-                    </div>
-                    <a
-                      class="button"
-                      href="#"
-                      style="color: #fff; font-family: 'Montserrat', sans-serif"
-                    >
-                      Nhận quà ngay
-                      <img
-                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/arrow-white.png"
-                        alt=""
-                        style="
-                          display: inline-block;
-                          margin-left: 10px;
-                          height: 10px;
-                          width: 5.87px;
-                        "
-                      />
-                    </a>
+                  <td width="100%" style="text-align: center">
+                    <table>
+                      <tr>
+                        <td>
+                          <h3
+                            style="
+                              font-weight: 700;
+                              font-size: 25px;
+                              line-height: 1.2;
+                              margin: 0 0 20px;
+                              font-family: 'Montserrat', sans-serif;
+                            "
+                          >
+                            Combo bứt phá<br />
+                            doanh thu
+                          </h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td width="20%"></td>
+                              <td width="60%">
+                                <div style="margin-bottom: 30px">
+                                  <p
+                                    style="
+                                      margin: 0 0 7px;
+                                      font-family: 'Montserrat', sans-serif;
+                                      color: #fff;
+                                    "
+                                  >
+                                    Miễn phí 1 tháng quản trị quảng cáo
+                                    Facebook, Google, Tik Tok.
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 0 0 7px;
+                                      font-family: 'Montserrat', sans-serif;
+                                      color: #fff;
+                                    "
+                                  >
+                                    Miễn phí thiết kế Landing Page cho hợp đồng
+                                    trị giá trên 50 triệu.
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 0 0 7px;
+                                      font-family: 'Montserrat', sans-serif;
+                                      color: #fff;
+                                    "
+                                  >
+                                    Chiết khấu 5% cho lần đăng ký dịch vụ tiếp
+                                    theo
+                                  </p>
+                                </div>
+                                <a
+                                  style="
+                                    display: inline-block;
+                                    border-radius: 8px;
+                                    width: 180px;
+                                    background: #276ef1;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    padding: 10px 5px;
+                                    font-size: 14px;
+                                    font-family: 'Montserrat', sans-serif;
+                                  "
+                                  href="#"
+                                >
+                                  Nhận quà ngay
+                                  <img
+                                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/arrow-white.png"
+                                    alt=""
+                                    style="
+                                      display: inline-block;
+                                      margin-left: 10px;
+                                      height: 10px;
+                                      width: 5.87px;
+                                    "
+                                  />
+                                </a>
+                              </td>
+                              <td width="20%"></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
@@ -461,7 +463,7 @@
           </tr>
 
           <tr>
-            <td height="20px"></td>
+            <td style="height: 20px"></td>
           </tr>
 
           <tr>
@@ -476,62 +478,94 @@
             >
               <table width="100%">
                 <tr>
-                  <td width="20%"></td>
-                  <td width="60%" style="text-align: center">
-                    <h3
-                      class="section-title"
-                      style="font-family: 'Montserrat', sans-serif"
-                    >
-                      Combo bứt phá<br />
-                      doanh thu
-                    </h3>
-                    <div class="section-text">
-                      <p
-                        style="
-                          margin: 0 0 7px;
-                          font-family: 'Montserrat', sans-serif;
-                        "
-                      >
-                        Miễn phí 1 tháng quản trị quảng cáo Facebook, Google,
-                        Tik Tok.
-                      </p>
-                      <p
-                        style="
-                          margin: 0 0 7px;
-                          font-family: 'Montserrat', sans-serif;
-                        "
-                      >
-                        Miễn phí thiết kế Landing Page cho hợp đồng trị giá trên
-                        50 triệu.
-                      </p>
-                      <p
-                        style="
-                          margin: 0 0 7px;
-                          font-family: 'Montserrat', sans-serif;
-                        "
-                      >
-                        Chiết khấu 5% cho lần đăng ký dịch vụ tiếp theo
-                      </p>
-                    </div>
-                    <a
-                      class="button"
-                      href="#"
-                      style="color: #fff; font-family: 'Montserrat', sans-serif"
-                    >
-                      Xem thêm
-                      <img
-                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/arrow-white.png"
-                        alt=""
-                        style="
-                          display: inline-block;
-                          margin-left: 10px;
-                          height: 10px;
-                          width: 5.87px;
-                        "
-                      />
-                    </a>
+                  <td width="100%">
+                    <table>
+                      <tr>
+                        <td width="100%" style="text-align: center">
+                          <h3
+                            style="
+                              font-weight: 700;
+                              font-size: 25px;
+                              line-height: 1.2;
+                              margin: 0 0 20px;
+                              font-family: 'Montserrat', sans-serif;
+                            "
+                          >
+                            Combo bứt phá<br />
+                            doanh thu
+                          </h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table>
+                            <tr>
+                              <td width="20%"></td>
+                              <td width="60%" style="text-align: center">
+                                <div style="margin-bottom: 30px">
+                                  <p
+                                    style="
+                                      margin: 0 0 7px;
+                                      font-family: 'Montserrat', sans-serif;
+                                    "
+                                  >
+                                    Miễn phí 1 tháng quản trị quảng cáo
+                                    Facebook, Google, Tik Tok.
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 0 0 7px;
+                                      font-family: 'Montserrat', sans-serif;
+                                    "
+                                  >
+                                    Miễn phí thiết kế Landing Page cho hợp đồng
+                                    trị giá trên 50 triệu.
+                                  </p>
+                                  <p
+                                    style="
+                                      margin: 0 0 7px;
+                                      font-family: 'Montserrat', sans-serif;
+                                    "
+                                  >
+                                    Chiết khấu 5% cho lần đăng ký dịch vụ tiếp
+                                    theo
+                                  </p>
+                                </div>
+                                <a
+                                  style="
+                                    display: inline-block;
+                                    border-radius: 8px;
+                                    width: 180px;
+                                    background: #276ef1;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    padding: 10px 5px;
+                                    font-size: 14px;
+                                    font-family: 'Montserrat', sans-serif;
+                                  "
+                                  href="#"
+                                >
+                                  Xem thêm
+                                  <img
+                                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/arrow-white.png"
+                                    alt=""
+                                    style="
+                                      display: inline-block;
+                                      margin-left: 10px;
+                                      height: 10px;
+                                      width: 5.87px;
+                                    "
+                                  />
+                                </a>
+                              </td>
+                              <td width="20%"></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
-                  <td width="20%"></td>
                 </tr>
               </table>
             </td>
@@ -539,117 +573,256 @@
 
           <tr>
             <td style="text-align: center; padding: 2.5em 1em">
-              <div
-                style="
-                  font-weight: 700;
-                  font-size: 20px;
-                  margin-bottom: 15px;
-                  font-family: 'Montserrat', sans-serif;
-                "
-              >
-                CÁC DỊCH VỤ CỦA CHÚNG TÔI
-              </div>
-              <div style="overflow: hidden">
-                <div class="service-item">
-                  <div class="circle">
-                    <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon1.png"
-                      style="width: 40px; height: 40px"
-                      alt="Marketing tổng thể"
-                    />
-                  </div>
-                  <span
-                    style="
-                      font-weight: 500;
-                      font-family: 'Montserrat', sans-serif;
-                    "
-                    >Marketing tổng thể</span
-                  >
-                </div>
-                <div class="service-item">
-                  <div class="circle" style="background: #606061">
-                    <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon2.png"
-                      style="width: 26.35px; height: 40px"
-                      alt="SEO tổng thể"
-                    />
-                  </div>
-                  <span
-                    style="
-                      font-weight: 500;
-                      font-family: 'Montserrat', sans-serif;
-                    "
-                  >
-                    SEO tổng thể</span
-                  >
-                </div>
-                <div class="service-item">
-                  <div class="circle">
-                    <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon3.png"
-                      style="width: 40px; height: 40px"
-                      alt="Quảng cáo"
-                    />
-                  </div>
-                  <span
-                    style="
-                      font-weight: 500;
-                      font-family: 'Montserrat', sans-serif;
-                    "
-                    >Quảng cáo</span
-                  >
-                </div>
-                <div class="service-item">
-                  <div class="circle" style="background: #606061">
-                    <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon4.png"
-                      alt="Thiết kế
-                        nhận diện
-                        thương hiệu"
-                      style="width: 40px; height: 40px"
-                    />
-                  </div>
-                  <span
-                    style="
-                      font-weight: 500;
-                      font-family: 'Montserrat', sans-serif;
-                    "
-                    >Thiết kế nhận diện thương hiệu
-                  </span>
-                </div>
-                <div class="service-item">
-                  <div class="circle">
-                    <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon5.png"
-                      alt="Thiết kế Website"
-                      style="width: 40px; height: 40px"
-                    />
-                  </div>
-                  <span
-                    style="
-                      font-weight: 500;
-                      font-family: 'Montserrat', sans-serif;
-                    "
-                    >Thiết kế Website</span
-                  >
-                </div>
-                <div class="service-item">
-                  <div class="circle" style="background: #606061">
-                    <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon6.png"
-                      alt="Content marketing"
-                      style="width: 40px; height: 40px"
-                    />
-                  </div>
-                  <span
-                    style="
-                      font-weight: 500;
-                      font-family: 'Montserrat', sans-serif;
-                    "
-                    >Content marketing</span
-                  >
-                </div>
-              </div>
+              <table width="100%">
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-weight: 700;
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                        font-family: 'Montserrat', sans-serif;
+                        color: #7a7a7a;
+                      "
+                    >
+                      CÁC DỊCH VỤ CỦA CHÚNG TÔI
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="100%">
+                      <tr>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href="https://gcoads.vn/services/marketing-tong-the/"
+                            target="_blank"
+                            style="display: block; padding: 15px"
+                          >
+                            <span
+                              style="
+                                display: block;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100%;
+                                background: #276ef1;
+                                line-height: 50px;
+                                margin: 0 auto 5px;
+                              "
+                            >
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon1.png"
+                                style="
+                                  margin-top: 15px;
+                                  width: 20px;
+                                  height: 20px;
+                                "
+                                alt="Marketing tổng thể"
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-weight: 500;
+                                font-family: 'Montserrat', sans-serif;
+                                color: #000;
+                              "
+                              >Marketing tổng thể</span
+                            >
+                          </a>
+                        </td>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href="https://gcoads.vn/services/dich-vu-seo/ "
+                            target="_blank"
+                            style="display: block; padding: 15px"
+                          >
+                            <span
+                              style="
+                                display: block;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100%;
+                                background: #606061;
+                                line-height: 50px;
+                                margin: 0 auto 5px;
+                              "
+                            >
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon2.png"
+                                style="margin-top: 15px; height: 20px"
+                                alt="SEO tổng thể"
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-weight: 500;
+                                font-family: 'Montserrat', sans-serif;
+                                color: #000;
+                              "
+                            >
+                              SEO tổng thể</span
+                            >
+                          </a>
+                        </td>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href=""
+                            target="_blank"
+                            style="display: block; padding: 15px"
+                          >
+                            <span
+                              style="
+                                display: block;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100%;
+                                background: #276ef1;
+                                line-height: 50px;
+                                margin: 0 auto 5px;
+                              "
+                            >
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon3.png"
+                                style="
+                                  margin-top: 15px;
+                                  width: 20px;
+                                  height: 20px;
+                                "
+                                alt="Quảng cáo"
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-weight: 500;
+                                font-family: 'Montserrat', sans-serif;
+                                color: #000;
+                              "
+                              >Quảng cáo</span
+                            >
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href="http://brity.vn/"
+                            target="_blank"
+                            style="display: block; padding: 15px"
+                          >
+                            <span
+                              style="
+                                display: block;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100%;
+                                background: #606061;
+                                line-height: 50px;
+                                margin: auto;
+                                text-align: center;
+                                margin: 0 auto 5px;
+                              "
+                            >
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon4.png"
+                                alt="Thiết kế
+                                  nhận diện
+                                  thương hiệu"
+                                style="
+                                  margin-top: 15px;
+                                  width: 20px;
+                                  height: 20px;
+                                "
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-weight: 500;
+                                font-family: 'Montserrat', sans-serif;
+                                color: #000;
+                              "
+                              >Thiết kế nhận diện thương hiệu
+                            </span>
+                          </a>
+                        </td>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href=""
+                            target="_blank"
+                            style="display: block; padding: 15px"
+                          >
+                            <span
+                              style="
+                                display: block;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100%;
+                                background: #276ef1;
+                                line-height: 50px;
+                                margin: 0 auto 5px;
+                              "
+                            >
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon5.png"
+                                alt="Thiết kế Website"
+                                style="
+                                  margin-top: 15px;
+                                  width: 20px;
+                                  height: 20px;
+                                "
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-weight: 500;
+                                font-family: 'Montserrat', sans-serif;
+                                color: #000;
+                              "
+                              >Thiết kế Website</span
+                            >
+                          </a>
+                        </td>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href="https://gcoads.vn/services/content-marketing/"
+                            target="_blank"
+                            style="display: block; padding: 15px"
+                          >
+                            <span
+                              style="
+                                display: block;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100%;
+                                background: #606061;
+                                line-height: 50px;
+                                margin: 0 auto 5px;
+                              "
+                            >
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/icon6.png"
+                                alt="Content marketing"
+                                style="
+                                  margin-top: 15px;
+                                  width: 20px;
+                                  height: 20px;
+                                "
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-weight: 500;
+                                font-family: 'Montserrat', sans-serif;
+                                color: #000;
+                              "
+                              >Content marketing</span
+                            >
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 
@@ -666,25 +839,58 @@
                 Theo dõi GCO để không bỏ lỡ những tin tức và ưu đãi hấp dẫn
               </div>
               <div style="text-align: center; margin-top: 15px">
-                <a href="#" class="social">
+                <a
+                  href="#"
+                  style="
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 100%;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 36px;
+                  "
+                >
                   <img
                     src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/internet.png"
                     alt="web"
-                    style="width: 17px; height: 17px"
+                    style="margin-top: 7px; width: 17px; height: 17px"
                   />
                 </a>
-                <a href="#" class="social">
+                <a
+                  href="#"
+                  style="
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 100%;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 36px;
+                  "
+                >
                   <img
                     src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/facebook.png"
                     alt="facebook"
-                    style="height: 16.99px; width: 8.48px"
+                    style="margin-top: 7px; height: 16.99px; width: 8.48px"
                   />
                 </a>
-                <a href="#" class="social">
+                <a
+                  href="#"
+                  style="
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 100%;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 36px;
+                  "
+                >
                   <img
                     src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail1/images/tik-tok.png"
                     alt="tiktok"
-                    style="height: 16.97px; width: 14.96px"
+                    style="margin-top: 7px; height: 16.97px; width: 14.96px"
                   />
                 </a>
               </div>
