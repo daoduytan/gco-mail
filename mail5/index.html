@@ -17,13 +17,10 @@
     <title></title>
     <!-- The title tag shows in email notifications, like Android 4.4. -->
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- CSS Reset : BEGIN -->
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
       html,
       body {
         margin: 0 auto !important;
@@ -138,16 +135,32 @@
         line-height: 1.8;
       }
 
-      .cirle {
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      ol,
+      li,
+      ul,
+      span,
+      div,
+      td {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .circle {
         height: 70px;
         width: 70px;
         border-radius: 100%;
-        background: #ffb900;
+        background: #276ef1;
         line-height: 70px;
         margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      }
+
+      .circle img {
+        display: inline-block;
+        margin: 15px auto;
       }
 
       .service-item {
@@ -247,8 +260,9 @@
                 <tr>
                   <td width="40%" class="logo" style="text-align: center">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/logo-white.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/logo-white.png"
                       alt="logo"
+                      style="width: 86px; height: 78.81px"
                     />
                   </td>
                 </tr>
@@ -289,12 +303,10 @@
                 class="button"
                 style="background: #ffb900; color: #fff"
               >
-                Nhận tư vấn
-                <img
-                  src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/arrow-white.svg"
-                  alt=""
-                  style="display: inline-block; margin-left: 10px"
-                />
+                Nhận tư vấn <img
+                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/arrow-white.png"
+                alt="" style=" display: inline-block; margin-left: 10px; height:
+                10px; width: 5.87px; "" />
               </a>
             </td>
           </tr>
@@ -348,9 +360,14 @@
                     >
                       Nhận tư vấn
                       <img
-                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/arrow-brown.svg"
+                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/arrow-brown.png"
                         alt=""
-                        style="display: inline-block; margin-left: 10px"
+                        style="
+                          display: inline-block;
+                          margin-left: 10px;
+                          height: 10px;
+                          width: 5.87px;
+                        "
                       />
                     </a>
                   </td>
@@ -386,9 +403,14 @@
                     >
                       Nhận tư vấn
                       <img
-                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/arrow-brown.svg"
+                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/arrow-brown.png"
                         alt=""
-                        style="display: inline-block; margin-left: 10px"
+                        style="
+                          display: inline-block;
+                          margin-left: 10px;
+                          height: 10px;
+                          width: 5.87px;
+                        "
                       />
                     </a>
                   </td>
@@ -414,42 +436,46 @@
               </div>
               <div style="overflow: hidden">
                 <div class="service-item">
-                  <div class="cirle">
+                  <div class="circle">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon1.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon1.png"
                       alt="Marketing
                         tổng thể"
+                      style="width: 40px; height: 40px"
                     />
                   </div>
                   <span style="font-weight: 500">Marketing tổng thể</span>
                 </div>
                 <div class="service-item">
-                  <div class="cirle" style="background: #6c4d38">
+                  <div class="circle" style="background: #6c4d38">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon2.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon2.png"
                       alt="SEO
                         tổng thể"
+                      style="width: 26.35px; height: 40px"
                     />
                   </div>
                   <span style="font-weight: 500"> SEO tổng thể</span>
                 </div>
                 <div class="service-item">
-                  <div class="cirle">
+                  <div class="circle">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon3.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon3.png"
                       alt="Quảng
                         cáo"
+                      style="width: 40px; height: 40px"
                     />
                   </div>
                   <span style="font-weight: 500">Quảng cáo</span>
                 </div>
                 <div class="service-item">
-                  <div class="cirle" style="background: #6c4d38">
+                  <div class="circle" style="background: #6c4d38">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon4.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon4.png"
                       alt="Thiết kế
                         nhận diện
                         thương hiệu"
+                      style="width: 40px; height: 40px"
                     />
                   </div>
                   <span style="font-weight: 500"
@@ -457,21 +483,22 @@
                   </span>
                 </div>
                 <div class="service-item">
-                  <div class="cirle">
+                  <div class="circle">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon5.svg"
-                      alt="Thiết kế
-                        Website"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon5.png"
+                      alt="Thiết kế Website"
+                      style="width: 40px; height: 40px"
                     />
                   </div>
                   <span style="font-weight: 500">Thiết kế Website</span>
                 </div>
                 <div class="service-item">
-                  <div class="cirle" style="background: #6c4d38">
+                  <div class="circle" style="background: #6c4d38">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon6.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/icon6.png"
                       alt="Content
                         marketing"
+                      style="width: 40px; height: 40px"
                     />
                   </div>
                   <span style="font-weight: 500">Content marketing</span>
@@ -506,8 +533,9 @@
                   "
                 >
                   <img
-                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/internet.svg"
+                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/internet.png"
                     alt="web"
+                    style="width: 17px; height: 17px"
                   />
                 </a>
                 <a
@@ -524,8 +552,9 @@
                   "
                 >
                   <img
-                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/facebook.svg"
+                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/facebook.png"
                     alt="facebook"
+                    style="height: 16.99px; width: 8.48px"
                   />
                 </a>
                 <a
@@ -541,8 +570,9 @@
                   "
                 >
                   <img
-                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/tik-tok.svg"
+                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/tik-tok.png"
                     alt="tiktok"
+                    style="height: 16.97px; width: 14.96px"
                   />
                 </a>
               </div>
@@ -556,18 +586,18 @@
                   href="tel:+84967381313"
                 >
                   <img
-                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/phone.svg"
+                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/phone.png"
                     alt="phone"
-                    style="margin-right: 5px"
+                    style="margin-right: 5px; height: 9px; width: 9px"
                   />
                   096 738 1313
                 </a>
               </div>
               <div>
                 <img
-                  src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/location.svg"
+                  src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/location.png"
                   alt="location"
-                  style="margin-right: 5px"
+                  style="margin-right: 5px; height: 9.6px; width: 6.8px"
                 />
                 Tầng 8, tòa nhà Toyota, 315 Trường Chinh, Quận Thanh Xuân, Hà
                 Nội

@@ -17,10 +17,9 @@
     <title></title>
     <!-- The title tag shows in email notifications, like Android 4.4. -->
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+    </style>
 
     <!-- CSS Reset : BEGIN -->
     <style>
@@ -131,6 +130,20 @@
     <!-- CSS Reset : END -->
 
     <style>
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      ol,
+      li,
+      ul,
+      span,
+      div,
+      td {
+        font-family: "Montserrat", sans-serif;
+      }
+
       body {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
@@ -138,16 +151,18 @@
         line-height: 1.8;
       }
 
-      .cirle {
+      .circle {
         height: 70px;
         width: 70px;
         border-radius: 100%;
         background: #276ef1;
         line-height: 70px;
         margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      }
+
+      .circle img {
+        display: inline-block;
+        margin: 15px auto;
       }
 
       .service-item {
@@ -260,7 +275,7 @@
                 <tr>
                   <td class="logo" style="text-align: center">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/logo.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/logo-white.png"
                       alt="logo"
                     />
                   </td>
@@ -318,7 +333,7 @@
                     >
                       Tìm hiểu thêm
                       <img
-                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/arrow-white.svg"
+                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/arrow-white.png"
                         alt=""
                         style="display: inline-block; margin-left: 10px"
                       />
@@ -335,7 +350,7 @@
                 <tr>
                   <td width="50%">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/calendar.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/calendar.png"
                       style="display: inline-block; max-width: 100%"
                       alt=" Lộ trình SEO hiệu quả trong vòng 6 tháng"
                     />
@@ -374,7 +389,7 @@
                     <a class="button" href="#">
                       Xem ngay
                       <img
-                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/arrow-blue.svg"
+                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/arrow-blue.png"
                         alt=""
                         style="display: inline-block; margin-left: 10px"
                       />
@@ -423,7 +438,7 @@
                     <a class="button" href="#">
                       Xem ngay
                       <img
-                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/arrow-blue.svg"
+                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/arrow-blue.png"
                         alt=""
                         style="display: inline-block; margin-left: 10px"
                       />
@@ -431,7 +446,7 @@
                   </td>
                   <td width="50%" style="text-align: right">
                     <img
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/browsing-online.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/browsing-online.png"
                       style="display: inline-block; max-width: 100%"
                       alt="Cải thiện bộ từ khóa SEO cho chuyển đổi tốt"
                     />
@@ -448,7 +463,7 @@
                   <td width="50%">
                     <img
                       style="display: inline-block; max-width: 100%"
-                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/browser-stats.svg"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/browser-stats.png"
                       alt="Đánh giá hiệu quả SEO như thế nào?"
                     />
                   </td>
@@ -486,7 +501,7 @@
                     <a class="button" href="#">
                       Xem ngay
                       <img
-                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/arrow-blue.svg"
+                        src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/arrow-blue.png"
                         alt=""
                         style="display: inline-block; margin-left: 10px"
                       />
@@ -553,7 +568,7 @@
                   href="tel:+84967381313"
                 >
                   <img
-                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/phone.svg"
+                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/phone.png"
                     alt="phone"
                     style="margin-right: 5px"
                   />
@@ -562,7 +577,7 @@
               </div>
               <div>
                 <img
-                  src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/location.svg"
+                  src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail2/images/location.png"
                   alt="location"
                   style="margin-right: 5px"
                 />
