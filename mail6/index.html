@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta charset="utf-8" />
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width" />
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;600;700&display=swap");
+
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        background: #f1f1f1;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
+      /* What it does: Fixes webkit padding issue. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],
+        /* iOS */
+        .unstyle-auto-detected-links *,
+        .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+
+      /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+      .im {
+        color: inherit !important;
+      }
+
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display: none !important;
+      }
+
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+      /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        u ~ div .email-container {
+          min-width: 320px !important;
+        }
+      }
+
+      /* iPhone 6, 6S, 7, 8, and X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u ~ div .email-container {
+          min-width: 375px !important;
+        }
+      }
+
+      /* iPhone 6+, 7+, and 8+ */
+      @media only screen and (min-device-width: 414px) {
+        u ~ div .email-container {
+          min-width: 414px !important;
+        }
+      }
+    </style>
+
+    <!-- CSS Reset : END -->
+
+    <style>
+      body {
+        font-family: "Be Vietnam", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      ol,
+      li,
+      ul,
+      span,
+      div,
+      td {
+        font-family: "Be Vietnam", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body
+    width="100%"
+    style="
+      margin: 0;
+      padding: 0 !important;
+      mso-line-height-rule: exactly;
+      background-color: #222120;
+    "
+  >
+    <center style="width: 100%; background-color: #f1f1f1">
+      <div
+        style="
+          display: none;
+          font-size: 1px;
+          max-height: 0px;
+          max-width: 0px;
+          opacity: 0;
+          overflow: hidden;
+          mso-hide: all;
+          font-family: sans-serif;
+        "
+      >
+        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+      </div>
+      <div
+        style="max-width: 400px; margin: 0 auto; padding: 0"
+        class="email-container"
+      >
+        <!-- BEGIN BODY -->
+        <table
+          align="center"
+          role="presentation"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          width="100%"
+          style="margin: auto; background: #fff"
+        >
+          <tr>
+            <td
+              style="
+                background: url(https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/bg1.jpg)
+                  no-repeat bottom center;
+                background-size: cover;
+                border-radius: 0px 0px 30px 30px;
+              "
+            >
+              <table
+                style="
+                  width: 100%;
+                  background: url(https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/hero.png)
+                    no-repeat bottom center;
+                  background-size: 125%;
+                "
+              >
+                <tr>
+                  <td style="padding: 2.5em 1em">
+                    <img
+                      style="width: 145.51px; height: 44px"
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/logo.png"
+                      alt=""
+                    />
+                    <h3
+                      style="
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 43px;
+                      "
+                    >
+                      <span style="color: #fff">Đừng bỏ lỡ</span><br />
+                      <span style="color: #ffe508"
+                        >Ưu đãi hấp dẫn <br />tháng này</span
+                      >
+                    </h3>
+                    <a
+                      href="#"
+                      style="
+                        display: inline-block;
+                        width: 167px;
+                        padding: 10px 5px;
+                        border: 0.75px solid #ffffff;
+                        box-sizing: border-box;
+                        border-radius: 20px;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: 600;
+                      "
+                      >Xem dịch vụ</a
+                    >
+                    <img
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/image.png"
+                      alt=""
+                      style="
+                        display: block;
+                        margin: auto;
+                        width: 170.8px;
+                        height: 170.8px;
+                      "
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td style="height: 100px"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="text-align: center; padding: 1em 1em 2.5em">
+              <table width="100%">
+                <tr>
+                  <td>
+                    <p
+                      style="
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                        font-family: 'Be Vietnam', sans-serif;
+                        font-size: 24px;
+                        line-height: 35px;
+                        text-transform: uppercase;
+                        color: #2463f5;
+                      "
+                    >
+                      CÁC DỊCH VỤ CỦA CHÚNG TÔI
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="100%">
+                      <tr>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href="https://gcoads.vn/services/marketing-tong-the/"
+                            target="_blank"
+                            style="display: block"
+                          >
+                            <span style="display: block; height: 90px">
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/icon1.png"
+                                style="
+                                  display: block;
+
+                                  width: 102px;
+                                "
+                                alt="Marketing tổng thể"
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-family: 'Be Vietnam', sans-serif;
+                                color: #000;
+                                font-size: 14px;
+                              "
+                              >Marketing tổng thể</span
+                            >
+                          </a>
+                        </td>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href="https://gcoads.vn/services/dich-vu-seo/ "
+                            target="_blank"
+                            style="display: block"
+                          >
+                            <span style="display: block; height: 90px">
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/icon2.png"
+                                style="
+                                  display: block;
+
+                                  width: 102px;
+                                "
+                                alt="SEO tổng thể"
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-size: 14px;
+                                font-family: 'Be Vietnam', sans-serif;
+                                color: #000;
+                              "
+                            >
+                              SEO<br />
+                              tổng thể</span
+                            >
+                          </a>
+                        </td>
+                        <td style="vertical-align: top; text-align: center">
+                          <a href="" target="_blank" style="display: block">
+                            <span style="display: block; height: 90px">
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/icon3.png"
+                                style="display: block; width: 102px"
+                                alt="Quảng cáo"
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-size: 14px;
+                                font-family: 'Be Vietnam', sans-serif;
+                                color: #000;
+                              "
+                              >Quảng cáo</span
+                            >
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href="http://brity.vn/"
+                            target="_blank"
+                            style="display: block"
+                          >
+                            <span style="display: block; height: 90px">
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/icon4.png"
+                                alt="Thiết kế nhận diện thương hiệu"
+                                style="
+                                  display: block;
+                                  margin-top: 20px;
+                                  width: 102px;
+                                "
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-size: 14px;
+                                font-family: 'Be Vietnam', sans-serif;
+                                color: #000;
+                              "
+                              >Nhận diện thương hiệu
+                            </span>
+                          </a>
+                        </td>
+                        <td style="vertical-align: top; text-align: center">
+                          <a href="" target="_blank" style="display: block">
+                            <span style="display: block; height: 90px">
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/icon5.png"
+                                alt="Thiết kế Website"
+                                style="
+                                  display: block;
+                                  margin-top: 20px;
+                                  width: 102px;
+                                "
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-size: 14px;
+                                font-family: 'Be Vietnam', sans-serif;
+                                color: #000;
+                              "
+                              >Thiết kế Website</span
+                            >
+                          </a>
+                        </td>
+                        <td style="vertical-align: top; text-align: center">
+                          <a
+                            href="https://gcoads.vn/services/content-marketing/"
+                            target="_blank"
+                            style="display: block"
+                          >
+                            <span style="display: block; height: 90px">
+                              <img
+                                src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/icon6.png"
+                                alt="Content marketing"
+                                style="
+                                  display: block;
+                                  margin-top: 20px;
+                                  width: 102px;
+                                "
+                              />
+                            </span>
+                            <span
+                              style="
+                                font-size: 14px;
+                                font-family: 'Be Vietnam', sans-serif;
+                                color: #000;
+                              "
+                              >Content marketing</span
+                            >
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td
+              style="
+                background: url(https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/bg2.jpg)
+                  no-repeat bottom center;
+                background-size: cover;
+                box-shadow: 0px 5px 15px 1px rgba(205, 84, 57, 0.15);
+                border-radius: 30px;
+              "
+            >
+              <table
+                style="
+                  width: 100%;
+                  background: url(https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/pattern.png)
+                    no-repeat bottom center;
+                  background-size: cover;
+                "
+              >
+                <tr>
+                  <td style="padding: 2.5em">
+                    <h3
+                      style="
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        margin: 0px;
+                      "
+                    >
+                      COMBO SIÊU TIẾT KIỆM
+                    </h3>
+                    <p style="font-size: 14px; color: #fff; margin: 20px 0">
+                      Trọn gói Facebook Ads, Google Ads với chi phí tiết kiệm
+                      hơn tới 30%
+                    </p>
+                    <a
+                      href="#"
+                      style="
+                        display: block;
+                        width: 180px;
+                        background: #276ef1;
+                        box-shadow: 0px 5px 15px 1px rgba(39, 110, 241, 0.15);
+                        border-radius: 20px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        padding: 10px 5px;
+                      "
+                      >Nhận ưu đãi</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/Illus.png"
+                      alt=""
+                      style="
+                        overflow: hidden;
+                        display: block;
+                        width: 331px;
+                        height: 222px;
+                        float: right;
+                        margin: 70px 0 20px 0;
+                      "
+                    />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td style="padding: 2.5em 2.5em 0 2.5em">
+                    <h3
+                      style="
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: #276ef1;
+                        text-transform: uppercase;
+                        margin: 0px;
+                      "
+                    >
+                      NÂNG TẦM THƯƠNG HIỆU
+                    </h3>
+                    <p style="font-size: 14px; color: #4b525e; margin: 20px 0">
+                      Giảm ngay 20% khi thiết kế bộ nhận diện<br />
+                      thương hiệu
+                    </p>
+                    <a
+                      href="#"
+                      style="
+                        display: block;
+                        width: 180px;
+                        background: #276ef1;
+                        box-shadow: 0px 5px 15px 1px rgba(39, 110, 241, 0.15);
+                        border-radius: 20px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        padding: 10px 5px;
+                      "
+                      >XEM CHI TIẾT</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/person.png"
+                      alt=""
+                      style="
+                        display: block;
+                        max-width: 100%;
+                        margin: 0 auto -2px;
+                      "
+                    />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td
+              style="
+                position: relative;
+                background: url(https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/bg-black.jpg)
+                  repeat-x bottom;
+              "
+            >
+              <table
+                style="
+                  width: 100%;
+                  position: relative;
+                  z-index: 10;
+                  background: url(https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/bg3.jpg)
+                    no-repeat center;
+                  background-size: cover;
+                  border-radius: 30px;
+                "
+              >
+                <tr>
+                  <td
+                    style="
+                      background: url(https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/partent2.png)
+                        no-repeat center;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      padding: 2.5em;
+                    "
+                  >
+                    <h3
+                      style="
+                        color: #fff;
+                        font-size: 24px;
+                        line-height: 1.5;
+                        margin: 0 0 20px;
+                      "
+                    >
+                      NHIỀU ƯU ĐÃI KHÁC<br />
+                      ĐANG CHỜ BẠN
+                    </h3>
+                    <p style="color: #fff; margin: 0">
+                      Mua 2 tặng 1 landing page<br />
+                    </p>
+                    <p style="color: #fff; line-height: 1.5; margin: 0">
+                      Mua 3 tặng 1 gói chăm sóc<br />
+                      nội dung fanpage.
+                    </p>
+                    <a
+                      href="#"
+                      style="
+                        display: block;
+                        width: 180px;
+                        height: 45px;
+                        background: url(https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/bg-btn.jpg)
+                          no-repeat center;
+                        background-size: cover;
+                        box-shadow: 0px 5px 15px 1px rgba(205, 84, 57, 0.15);
+                        border-radius: 20px;
+                        color: #fff;
+
+                        font-size: 14px;
+                        line-height: 110%;
+                        text-transform: uppercase;
+                        text-align: center;
+                        line-height: 40px;
+                        margin-top: 30px;
+                      "
+                      >Nhận quà ngay</a
+                    >
+                    <img
+                      src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/star.png"
+                      alt=""
+                      style="
+                        display: block;
+                        width: 257px;
+                        height: 232px;
+                        margin: 30px auto;
+                      "
+                    />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td
+              style="background: #222120; color: #fff; padding: 4em 1em 2.5em"
+            >
+              <div style="font-weight: 400; width: 85%">
+                Theo dõi GCO để không bỏ lỡ những tin tức và ưu đãi hấp dẫn
+              </div>
+              <div style="margin-top: 15px">
+                <a
+                  href="#"
+                  style="
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 100%;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 25px;
+                  "
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/internet.png"
+                    alt="web"
+                    style="margin-top: 7px; width: 17px; height: 17px"
+                  />
+                </a>
+                <a
+                  href="#"
+                  style="
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 100%;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 25px;
+                    margin: 0 10px;
+                  "
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/facebook.png"
+                    alt="facebook"
+                    style="margin-top: 7px; height: 16.99px; width: 8.48px"
+                  />
+                </a>
+                <a
+                  href="#"
+                  style="
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 100%;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 25px;
+                  "
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail5/images/tik-tok.png"
+                    alt="tiktok"
+                    style="margin-top: 7px; height: 16.97px; width: 14.96px"
+                  />
+                </a>
+              </div>
+              <div
+                style="border-top: 1px solid #858fa3; margin-top: 20px"
+              ></div>
+              <div style="margin: 20px 0 15px">
+                <div style="font-weight: 500; font-size: 14px">
+                  GCO DIGITAL MARKETING AGENCY
+                </div>
+                <span style="font-weight: 500; font-size: 14px"
+                  >Giải pháp marketing cho doanh nghiệp 4.0</span
+                >
+              </div>
+
+              <div
+                style="
+                  position: relative;
+                  padding-left: 30px;
+                  margin-bottom: 10px;
+                "
+              >
+                <a
+                  style="color: #fff; text-decoration: none"
+                  href="tel:+84967381313"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/phone.png"
+                    alt="phone"
+                    style="
+                      margin-right: 5px;
+                      height: 20px;
+                      width: 12px;
+                      position: absolute;
+                      left: 3px;
+                      top: 5px;
+                    "
+                  />
+                  <span style="font-size: 14px"> 096 738 1313 </span>
+                </a>
+              </div>
+              <div style="position: relative; padding-left: 30px">
+                <img
+                  src="https://raw.githubusercontent.com/daoduytan/gco-mail/master/mail6/images/location.png"
+                  alt="location"
+                  style="
+                    margin-right: 5px;
+                    height: 20px;
+                    width: 16px;
+                    position: absolute;
+                    left: 0;
+                    top: 15px;
+                  "
+                />
+                <span style="font-size: 14px">
+                  Tầng 8, tòa nhà Toyota, 315 Trường Chinh, Quận Thanh Xuân, Hà
+                  Nội
+                </span>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+  </body>
+</html>
